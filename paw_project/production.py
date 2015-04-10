@@ -106,6 +106,13 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+ALLOWED_HOSTS = [
+    'localhost',
+    '.fgcu.edu',
+    '.fgcu.edu.',
+    '.satnet.fgcu.edu',
+    '.satnet.fgcu.edu.',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

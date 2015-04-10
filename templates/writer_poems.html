@@ -20,7 +20,7 @@
         <br>
         {% for p in poems %}
             <div class="col-md-6 portfolio-item">
-                <p>{{ p.name }}</p>
+                <p>{{ p.name|markdown }}</p>
                 <p>{{ p.body|markdown }}</p>
             </div>
 

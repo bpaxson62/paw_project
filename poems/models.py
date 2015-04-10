@@ -33,7 +33,7 @@ class Meta:
 
 
 class Poem(models.Model):
-    name = models.CharField(max_length=200)
+    name = MarkdownField()
     body = MarkdownField()
     writer = models.ForeignKey(Writer)
     slug = models.SlugField(max_length=50, unique=True)

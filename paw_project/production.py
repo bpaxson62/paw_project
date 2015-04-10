@@ -56,11 +56,17 @@ def get_secret(setting, secrets=secrets):
 
 SECRET_KEY = get_secret("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
+# DEBUG = True
+#
+# TEMPLATE_DEBUG = True
+#
+# ALLOWED_HOSTS = [
+#     'localhost',
+#     '.fgcu.edu',
+#     '.fgcu.edu.',
+#     '.satnet.fgcu.edu',
+#     '.satnet.fgcu.edu.',
+# ]
 
 
 # Application definition
@@ -118,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),

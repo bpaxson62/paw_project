@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-MEDIA_ROOT = '/home/zalewski/paw_project/media'
+MEDIA_ROOT = '/home/paxson/public_html/media'
 MEDIA_URL = '/~paxson/media/'
 STATIC_URL = '/~paxson/static/'
 

@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load django_markdown %}
+
 {#{% load staticfiles %}#}
 {% block headertitle %}
     {{ writer.name }}
@@ -6,4 +8,24 @@
 
 {% block title %}
     {{ writer.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <a class="img-responsive" href="#">
+            <img class="img-rounded" src="{{ MEDIA_URL }}{{ writer.photo }}" alt=""
+                 style="width-max: 300px; height-max: 400px;">
+        </a>
+        <br>
+        <br>
+
+        <div class="col-md-6 portfolio-item">
+            <p>{{ writer.bio |markdown }}</p>
+        </div>
+
+        <br>
+    </div>
+    <br>
+
+    </div>
 {% endblock %}

@@ -17,7 +17,7 @@ def pub_file_dir(instance, file_name):
 class Writer(models.Model):
     name = models.CharField(max_length=50)
     slug = models.SlugField(max_length=50, unique=True)
-    bio = models.TextField()
+    bio = MarkdownField()
     url = models.CharField(max_length=500)
     photo = models.ImageField(upload_to=file_dir, null=True, blank=True)
     modified = models.DateTimeField(auto_now=True)

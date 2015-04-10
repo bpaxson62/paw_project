@@ -4,7 +4,7 @@ from django_markdown.admin import MarkdownModelAdmin
 from django.contrib import admin
 from poems import models
 
-class WriterAdmin(admin.ModelAdmin):
+class WriterAdmin(MarkdownModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
 
 

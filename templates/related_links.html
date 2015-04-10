@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block headertitle %}
+    Writers
+{% endblock %}
+
+{% block title %}
+    Related Links
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        {% for l in links %}
+            <div class="col-md-6 portfolio-item">
+                <a href="http://{{ l.url }}">{{ l.name }}</a>
+                <p>{{ l.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

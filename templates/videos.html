@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{#{% load staticfiles %}#}
+{% block headertitle %}
+    Writers
+{% endblock %}
+
+{% block title %}
+    Videos
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        {% for v in videos %}
+
+            <div class="col-md-4 portfolio-item">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <a class="img-responsive" href="#">
+                            <img class="img-rounded" src="{{ MEDIA_URL }}{{ v.writer.photo }}" alt=""
+                                 style="width: 100px; height: 150px;">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="http://{{ v.url }}">{{ v.title }}</a>
+                    </h3>
+                    <ul>
+                        <ul><a href="{% url 'writer_detail' writer_slug=v.writer.slug %}">{{ v.writer.name }}</a></ul>
+                        <p>{{ v.writer.bio|truncatewords:25 }}...</p>
+
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

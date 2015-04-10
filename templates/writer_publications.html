@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{#{% load staticfiles %}#}
+{% block headertitle %}
+    {{ writer.name }}
+{% endblock %}
+
+{% block title %}
+    {{ writer.name }}
+
+{% endblock %}
+{% block content %}
+    <div class="row">
+      <a class="img-responsive" href="#">
+                    <img class="img-rounded" src="{{ MEDIA_URL }}{{ writer.photo }}" alt=""
+                         style="width-max: 300px; height-max: 400px;">
+                </a>
+    <br>
+    <br>
+        {% for p in publications %}
+            <div class="col-md-6 portfolio-item">
+                <a class="img-responsive" href="#">
+                    <img class="img-rounded" src="{{ MEDIA_URL }}{{ p.photo }}" alt=""
+                         style="width-max: 300px; height-max: 400px;">
+                </a>
+            </div>
+            <p>{{ p.title }}</p>
+            <p>{{ p.publisher }}</p>
+            <br>
+            </div>
+            <br>
+
+        {% endfor %}
+    </div>
+{% endblock %}

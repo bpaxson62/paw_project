@@ -41,7 +41,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-         <a class="navbar-brand" href="{% url 'home' %}">Polish American Writers</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Polish American Writers</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -77,53 +77,61 @@
 <!-- Content Section -->
 <section>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 portfolio-item">
-                <a class="img-responsive" href="#">
-                    <img class="img-rounded" src="{{ MEDIA_URL }}images/img.gif" alt=""
-                         style="width: 300px; height: 400px;">
-                </a>
-            </div>
-            <div class="row">
+        {#        <div class="row">#}
+        <div class="col-md-6 portfolio-item">
 
-                <p> Today, wild parakeets awoke</p>
-
-                <p>confused to find themselves chattering</p>
-
-                <p> in a strange patois.</p>
-                <br>
-
-                <p> Today, even the ants are tourists</p>
-
-                <p>and the iguana, camouflaged as a mirror</p>
-
-                <p>has forgotten his true reflection</p>
-                <br>
-
-                <p>The goats must be sorry</p>
-
-                <p>they've eaten their passports</p>
-
-                <p>because today, like us, they're no longer</p>
-                <br>
-
-                <p>sure of who they are or what they're</p>
-
-                <p>doing here, otherwise, why else</p>
-
-                <p>would goats be swimming out to sea?</p>
-                <br>
-                <p> - Excerpt from Today, Tonight by Stuart Dybek</p>
-            </div>
+                <ul>
+                    <a class="img-responsive" href="#">
+                        <img class="img-rounded" src="{{ MEDIA_URL }}images/img.gif" alt=""
+                             style="width: 300px; height: 400px;">
+                    </a>
+                </ul>
         </div>
+        {#            </div>#}
+        {#                <div class="row">#}
+        <div class="col-md-6 portfolio-item">
+        <ul>
+            <p> Today, wild parakeets awoke</p>
+
+            <p>confused to find themselves chattering</p>
+
+            <p> in a strange patois.</p>
+            <br>
+
+            <p> Today, even the ants are tourists</p>
+
+            <p>and the iguana, camouflaged as a mirror</p>
+
+            <p>has forgotten his true reflection</p>
+            <br>
+
+            <p>The goats must be sorry</p>
+
+            <p>they've eaten their passports</p>
+
+            <p>because today, like us, they're no longer</p>
+            <br>
+
+            <p>sure of who they are or what they're</p>
+
+            <p>doing here, otherwise, why else</p>
+
+            <p>would goats be swimming out to sea?</p>
+            <br>
+
+            <p> - Excerpt from Today, Tonight by Stuart Dybek</p>
+        </ul>
+        </ul>
+        {#                </div>#}
+</div>
+
+    {#        </div>#}
     </div>
 </section>
 
 <!-- Fixed Height Image Aside -->
 <!-- Image backgrounds are set within the full-width-pics.css file. -->
 <aside class="image-bg-fixed-height"></aside>
-
-
 
 
 <footer>

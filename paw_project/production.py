@@ -17,8 +17,8 @@ from django.core.exceptions import ImproperlyConfigured
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
-# MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-# STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 DEBUG = False
@@ -117,9 +117,11 @@ ALLOWED_HOSTS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
+SITE_ID = 1
+
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'US/Eastern'
 
 USE_I18N = True
 

@@ -29,9 +29,9 @@
 
                         {#                    <div class="col-md-3">#}
 {#                         <div class="row">#}
-                        <h3>
-                            <a href="http://{{ w.url }}">{{ w.name }}</a>
-                        </h3>
+                        <h4>
+                            <a href="http://{{ w.url }}">{{ w.name|truncatechars:25 }}</a>
+                        </h4>
 {#                             </div>#}
 {#                         <div class="row">#}
 {#                        <ul>#}
@@ -48,7 +48,7 @@
 {#                             </div>#}
                         {#                                        <div class="col-md-3">#}
 {#                    </div>#}
-{#                  <p>{{ w.bio|truncatewords:25 }}...</p>#}
+                  <p>{{ w.bio|truncatewords:25 }}...</p>
                     {#                                            <p>{{ w.bio|truncatewords:25 }}...</p>#}
                     {#                                        </div>#}
 {#                </div>#}

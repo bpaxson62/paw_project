@@ -6,8 +6,8 @@
 
 {% block title %}
     {{ writer.name }}
-
 {% endblock %}
+
 {% block content %}
     <div class="row">
         <a class="img-responsive" href="#">
@@ -19,21 +19,24 @@
     <br>
     <div class="row">
         {% for p in publications %}
-            <div class="col-md-6 portfolio-item">
+            <div class="col-md-6 portfolio-item" style="height: 100%">
                 <a class="img-responsive" href="#">
                     <img class="img-rounded" src="{{ MEDIA_URL }}{{ p.photo }}" alt=""
                          style="width-max: 300px; height-max: 400px;">
                 </a>
             </div>
-            <div class="col-md-3 portfolio-item">
-                <p>{{ p.title }}</p>
+            <div class="col-md-3 portfolio-item" style="height: 100%">
+            <p>{{ p.title }}</p>
 
-                <p>{{ p.publisher }}</p>
-                <br>
-            </div>
-            </div>
+            <p>{{ p.publisher }}</p>
             <br>
+            <br>
+            </div>
+
+
+            
+
 
         {% endfor %}
-
+</div>
 {% endblock %}

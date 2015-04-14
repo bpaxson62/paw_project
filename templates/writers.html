@@ -14,12 +14,14 @@
         {% for w in writers %}
             <div class="col-md-4 portfolio-item">
 
-                <div class="col-md-4">
-                    <a class="img-responsive" href="#">
-
-                        <img class="img-rounded" src="{{ MEDIA_URL }}{{ w.photo }}" alt=""
-                             style="width: 100px; height: 150px;">
-                    </a>
+                <div  class="col-md-4">
+{#                    <a class="img-responsive" href="#">#}
+                    <div id ='pic' class="picture">
+                        <img id ='pic' src="{{ MEDIA_URL }}{{ w.photo }}" alt="";
+{#                             style="width: 100px; height: 150px; overflow: hidden; border-radius: 6px;#}
+                             ">
+                        </div>
+{#                    </a>#}
                 </div>
 
                 <h4>

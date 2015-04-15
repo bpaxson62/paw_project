@@ -18,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="{% static "css/full-width-pics.css" %}" rel="stylesheet">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,21 +47,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>
-
-                    <a href="{% url 'writer_index' %}">Poets and Writers</a>
-                </li>
-                <li>
-                    <a href="{% url 'related links' %}">Related Links</a>
-
-                </li>
-                <li>
-                    <a href="{% url 'videos' %}">Videos</a>
-                </li>
-                <li>
-                    <a href="{% url 'contact' %}">Contact Us</a>
-
-                </li>
+                <li><a href="{% url 'writer_index' %}">Poets and Writers</a></li>
+                <li><a href="{% url 'related links' %}">Related Links</a></li>
+                <li><a href="{% url 'videos' %}">Videos</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -78,7 +68,21 @@
 <section>
     <div class="container">
         {#        <div class="row">#}
-        <div class="col-md-6 portfolio-item">
+        <div class="row">
+                <div class="row">
+                     <div class="col-md-9 portfolio-item">
+                    <p>But this language of yours, said one of the instructors, himself an obvious Britisher, where does it come from? From the mouth of Polish mothers, I replied.
+William Carlos Williams, The Autobiography, p. 311</p>
+
+                     </div>
+                     <div class="col-md-9 portfolio-item">
+                <div class="progress progress-info progress-striped">
+                    <div class="bar" style="width: 100%"></div>
+                </div>
+                         </div>
+            </div>
+
+            <div class="col-md-6 portfolio-item">
 
                 <ul>
                     <a class="img-responsive" href="#">
@@ -86,46 +90,51 @@
                              style="width: 300px; height: 400px;">
                     </a>
                 </ul>
-        </div>
-        {#            </div>#}
-        {#                <div class="row">#}
-        <div class="col-md-6 portfolio-item">
-        <ul>
-            <p> Today, wild parakeets awoke</p>
+            </div>
+            {#            </div>#}
+            {#                <div class="row">#}
 
-            <p>confused to find themselves chattering</p>
+{#            <div class="row">#}
 
-            <p> in a strange patois.</p>
-            <br>
+                <div class="col-md-3 portfolio-item">
 
-            <p> Today, even the ants are tourists</p>
 
-            <p>and the iguana, camouflaged as a mirror</p>
+                    <ul>
+                        <p> Today, wild parakeets awoke</p>
 
-            <p>has forgotten his true reflection</p>
-            <br>
+                        <p>confused to find themselves chattering</p>
 
-            <p>The goats must be sorry</p>
+                        <p> in a strange patois.</p>
+                        <br>
 
-            <p>they've eaten their passports</p>
+                        <p> Today, even the ants are tourists</p>
 
-            <p>because today, like us, they're no longer</p>
-            <br>
+                        <p>and the iguana, camouflaged as a mirror</p>
 
-            <p>sure of who they are or what they're</p>
+                        <p>has forgotten his true reflection</p>
+                        <br>
 
-            <p>doing here, otherwise, why else</p>
+                        <p>The goats must be sorry</p>
 
-            <p>would goats be swimming out to sea?</p>
-            <br>
+                        <p>they've eaten their passports</p>
 
-            <p> - Excerpt from Today, Tonight by Stuart Dybek</p>
-        </ul>
-        </ul>
-        {#                </div>#}
-</div>
+                        <p>because today, like us, they're no longer</p>
+                        <br>
 
-    {#        </div>#}
+                        <p>sure of who they are or what they're</p>
+
+                        <p>doing here, otherwise, why else</p>
+
+                        <p>would goats be swimming out to sea?</p>
+                        <br>
+
+                        <p> - Excerpt from Today, Tonight by Stuart Dybek</p>
+                    </ul>
+                    {#                </div>#}
+                </div>
+            </div>
+            {#        </div>#}
+{#        </div>#}
     </div>
 </section>
 

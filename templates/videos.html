@@ -21,7 +21,7 @@
 {#                             style="width: 100px; height: 150px; overflow: hidden; border-radius: 6px;#}>
                         </div>
                           <h4>
-                             <a href="http://{{ v.url }}">{{ v.title|truncatechars:25 }}</a>
+                             <a href="http://{{ v.url }}">{{ v.title|truncatechars:75 }}</a>
                          </h4>
 
                         <ul><a href="{% url 'writer_detail' writer_slug=v.writer.slug %}">{{ v.writer.name }}</a></ul>

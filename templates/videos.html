@@ -25,7 +25,7 @@
                          </h4>
 
                         <ul><a href="{% url 'writer_detail' writer_slug=v.writer.slug %}">{{ v.writer.name }}</a></ul>
-                          <ul><p>{{ v.writer.bio|truncatechars:25 }}...</p>   </ul>
+{#                          <ul><p>{{ v.writer.bio|truncatechars:25 }}...</p>   </ul>#}
                 </div>
             </div>
         {% endfor %}

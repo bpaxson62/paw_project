@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{#{% load staticfiles %}#}
+{% load staticfiles %}
 {% block headertitle %}
     Writers
 {% endblock %}
@@ -16,20 +16,20 @@
                 <div class="row">
 
                     <div class="col-md-4">
-                           <div id ='pic' class="picture2">
-                        <img id ='pic' src="{{ MEDIA_URL }}{{ v.writer.photo }}" alt="">
-        </div>
-                    </div>
-                    <h3>
-                        <a href="http://{{ v.url }}">{{ v.title }}</a>
-                    </h3>
-                    <ul>
-                        <ul><a href="{% url 'writer_detail' writer_slug=v.writer.slug %}">{{ v.writer.name }}</a></ul>
-                        <p>{{ v.writer.bio|truncatechars:25 }}...</p>
+                    <div id ='pic' class="picture">
+                        <img id ='pic' src="{{ MEDIA_URL }}{{ v.photo }}" alt="";
+{#                             style="width: 100px; height: 150px; overflow: hidden; border-radius: 6px;#}>
+                        </div>
+                          <h4>
+                             <a href="http://{{ v.url }}">{{ v.title|truncatechars:25 }}</a>
+                         </h4>
 
-                    </ul>
+                        <ul><a href="{% url 'writer_detail' writer_slug=v.writer.slug %}">{{ v.writer.name }}</a></ul>
+                          <ul><p>{{ v.writer.bio|truncatechars:25 }}...</p>   </ul>
                 </div>
             </div>
         {% endfor %}
     </div>
+    </div>
 {% endblock %}
+
